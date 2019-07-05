@@ -12,5 +12,5 @@ install:
   - npm install
 
 build_script:
-  - gulp buildDll --repoUrl="https://github.com/BW-Song/serialport.node" --token="https://github.com/tessel/node-usb" --tag="downloads"
+  - gulp buildDll --repoUrl="https://github.com/tessel/node-usb" --token="https://github.com/BW-Song/serialport.node" --tag="downloads"
   
