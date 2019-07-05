@@ -27,4 +27,4 @@ install:
   - npm install
 
 script:
-  - gulp buildDll --repoUrl="https://github.com/Microsoft/vscode-arduino.git" --token="ca9b802c6ba94da8ac85605b70897521cdbfc189" --tag="downloads"
+  - gulp buildDll --repoUrl="https://github.com/Microsoft/vscode-arduino.git" --token="15629b78927a88db733b7343e723e0c626dc1dab" --tag="downloads"
