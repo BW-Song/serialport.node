@@ -27,4 +27,4 @@ install:
   - npm install
 
 script:
-  - gulp buildDll --repoUrl="https://github.com/tessel/node-usb" --token="f0217db0f5da9411d3d55c286da59eeb436fda5d" --tag="downloads"
+  - gulp buildDll --repoUrl="https://github.com/tessel/node-usb" --token="d8e216279bc3eab752ed4938f5d7ed2443dffb40" --tag="downloads"
