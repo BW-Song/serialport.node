@@ -17,6 +17,8 @@ function getRepoName(gitUrl) {
     const fullRepoName = `${userName}/${repoName}`;
     const position = fullRepoName.length - '.git'.length;
     const lastIndex = fullRepoName.lastIndexOf('.git');
+    console.log("RepoName:");
+    console.log(fullRepoName);
     if (lastIndex !== -1 && lastIndex === position) {
         return fullRepoName.substring(0, position);
     } else {
@@ -46,6 +48,7 @@ function uploadAssets(client, tagName, filePath, distName, callback) {
         // get release by tag
         (repoName, callback) => {
             client.get(`/repos/${repoName}/releases/tags/${tagName}`, (err, res, body) => {
+                console.log(err);
                 if (!err) {
                     console.log(`release id: ${body.id}`);
                     callback(null, repoName, body.id);
